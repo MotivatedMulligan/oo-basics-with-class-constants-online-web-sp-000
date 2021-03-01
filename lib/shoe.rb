@@ -1,14 +1,14 @@
 
 class Shoe
-  attr_accessor :color, :size, :material
-  attr_reader :brand, :condition
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand
 
 BRANDS = []
  #attr_accessor :author, :page_count
  #attr_reader :title, :genre
 
 
-  def initialize(brand)
+  def initialize(condition="new")
     @condition = condition
     @color = color
     @size = size
@@ -23,7 +23,7 @@ BRANDS = []
 
   def brand=(brand)
     @brand = brand
-  BRANDS << brand
+  BRANDS << |brand|
   returns BRANDS
   end
 end
