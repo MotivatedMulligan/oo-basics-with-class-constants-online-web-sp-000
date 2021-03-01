@@ -1,12 +1,16 @@
 
 class Shoe
-  attr_accessor :color, :size, :material #:condition
+  attr_accessor :color, :size, :material 
   attr_reader :brand, :condition
 
 BRANDS = []
 
   def initialize(condition)
     @condition = condition
+    @color = color
+    @size = size
+    @material = material
+    @brand = brand
   end
 
   def cobble
