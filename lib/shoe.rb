@@ -8,12 +8,13 @@ BRANDS = []
  #attr_reader :title, :genre
 
 
-  def initialize(condition="new")
-    @condition = condition
-    @color = color
-    @size = size
-    @material = material
+  def initialize(brand)
+  #  @condition = condition
+  #  @color = color
+  #  @size = size
+  #  @material = material
     @brand = brand
+    BRANDS << brand unless BRANDS.any? { |b| b == brand }
   end
 
   def cobble
@@ -21,9 +22,9 @@ BRANDS = []
     puts "Your shoe is as good as new!"
   end
 
-  def brand=(brand)
-    @brand = brand
-  BRANDS << brand
-  returns BRANDS
-  end
+  #def brand=(brand)
+  #  @brand = brand
+  #BRANDS << brand
+  #returns BRANDS
+  #end
 end
