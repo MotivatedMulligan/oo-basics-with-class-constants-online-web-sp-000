@@ -23,7 +23,7 @@ BRANDS = []
 
   def brand=(brand)
     @brand = brand
-  BRANDS << |brand|
+  BRANDS << brand
   returns BRANDS
   end
 end
